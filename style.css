@@ -1,6 +1,44 @@
 * {
   margin: 0;
+  padding: 0;
 }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.nav1 {
+  font-size: 20px;
+  font-weight: normal;
+  padding-bottom: 0.5rem;
+}
+.circleimg {
+
+ 
+  
+}
+.date1 {
+  color: lightgray;
+  font-size: 16px;
+}
+.headsection1 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.heading1 {
+  padding: 30px 20px;
+}
+.personimg {
+  padding: 10px 20px;
+}
+.meetplan {
+  display: inline-block;
+  padding: 30px;
+  
+}
+
 
 .Sidebar {
   display: flex;
