@@ -13,11 +13,12 @@
   font-weight: normal;
   padding-bottom: 0.5rem;
 }
-.circleimg {
 
- 
-  
+.container {
+  display: flex;
+  flex-direction: row;
 }
+
 .date1 {
   color: lightgray;
   font-size: 16px;
@@ -36,9 +37,7 @@
 .meetplan {
   display: inline-block;
   padding: 30px;
-  
 }
-
 
 .Sidebar {
   display: flex;
