@@ -31,15 +31,40 @@
   justify-content: space-between;
   padding-top: 30px;
 }
+.headsection {
+  /* background-color: #ffff; */
+  display: flex;
+}
+.avatar {
+  height: 60px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 9999px;
+  border: 5px solid #aaa;
+}
+.avatar:not(.avatar:first-child) {
+  margin-left: -20px;
+}
+.plus-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+  color: darkslategray;
+  font-weight: bold;
+}
 .heading1 {
   padding: 30px 20px;
 }
 .personimg {
   padding: 10px 20px;
 }
-.meetplan {
-  display: inline-block;
-  padding: 30px;
+.meetingtime {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  margin-left: 40px;
 }
 
 .Sidebar {
@@ -222,14 +247,6 @@
 #bottom4 {
   grid-area: d;
 }
-.textitems {
-  position: absolute;
-  z-index: 1;
-  top: 40px;
-  color: #ffff;
-  padding: 10px;
-  font-size: 20px;
-}
 
 .track {
   font-size: 18px;
@@ -240,41 +257,37 @@
   padding: 5px;
 }
 .box1 {
-  position: relative;
+  height: 200px;
+  background: url(./Assets/weeklyreport.png) no-repeat;
+  padding: 20px;
 }
-.week {
-  width: 410px;
-}
-.system {
-  width: 200px;
-}
+
 .image1 {
   display: flex;
   flex-direction: row;
   gap: 10px;
   padding-top: 10px;
+  height: 100vh;
 }
-.textimg {
-  position: absolute;
-  z-index: 3;
-  top: 30px;
-  padding: 10px;
+.report,
+.track,
+.button1 {
+  padding: 5px;
+}
+.system {
+  width: 200px;
 }
 .imagereport {
   position: relative;
 }
+.textitems {
+  position: absolute;
+  z-index: 2;
+  top: 15px;
+  padding: 20px;
+}
 .systemimg {
   position: relative;
-}
-.textimg2 {
-  position: absolute;
-  z-index: 3;
-  top: 30px;
-  padding: 10px;
-}
-.incomplete {
-  width: 40%;
-  padding-top: 20px;
 }
 .complete {
   padding-top: 20px;
@@ -302,4 +315,11 @@
 #plus {
   padding: 5px;
   align-items: center;
+}
+#docimage {
+  height: 60px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 9999px;
+  border: 5px solid #fff;
 }
