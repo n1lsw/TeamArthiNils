@@ -17,6 +17,7 @@
 .container {
   display: flex;
   flex-direction: row;
+  height: 100vh;
 }
 
 .date1 {
@@ -44,8 +45,8 @@
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  width: 10vw;
-  border: 1px black solid;
+  width: 20vw;
+  /* border: 1px black solid; */
   font-size: 30px;
   padding-top: 20px;
 }
@@ -104,4 +105,117 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+}
+
+.middle_boxes {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.aux_spacing {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aux_spacing div {
+  font-size: 12px;
+}
+
+#header_third {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+}
+
+#header_third :nth-child(1) {
+  font-size: 20px;
+}
+
+#header_third :nth-child(2) {
+  font-size: 12px;
+  color: grey;
+}
+
+.Box {
+  height: 100px;
+  width: 400px;
+  border: 1px solid black;
+  display: flex;
+  /* background-color: red; */
+  margin-top: 20px;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* align-content: space-between; */
+}
+
+div:nth-child(1) {
+  font-size: 12px;
+}
+
+.Box div:nth-child(2) {
+  font-size: 18px;
+}
+
+.Box div:nth-child(3) {
+  font-size: 15px;
+}
+
+#learnings {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#dots {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#dots div:nth-child(1) {
+  font-size: 20px;
+}
+
+#bottom1,
+#bottom2,
+#bottom3,
+#bottom4 {
+  display: flex;
+  flex: row;
+  align-items: center;
+}
+
+#four_bottom {
+  display: grid;
+  grid-template-areas:
+    "a b"
+    "c d";
+}
+
+#bottom1 {
+  grid-area: a;
+}
+
+#bottom2 {
+  grid-area: b;
+}
+
+#bottom3 {
+  grid-area: c;
+}
+
+#bottom4 {
+  grid-area: d;
 }
