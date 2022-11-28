@@ -18,12 +18,12 @@
 .container {
   display: flex;
   flex-direction: row;
-  height: 100vh;
-  /* background-color: ; */
+  height: 150vh;
+  background-color: #ffcc99;
 }
 
 .date1 {
-  color: lightgray;
+  color: black;
   font-size: 16px;
 }
 .headsection1 {
@@ -71,6 +71,7 @@
   gap: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
+  /* font-size: 200px; */
 }
 
 #inlet {
@@ -97,7 +98,7 @@
 #Logout {
   display: flex;
   align-items: center;
-  background-color: white;
+  background-color: #ffcc99;
   border: 0px;
   font-size: 20px;
 }
@@ -160,15 +161,15 @@
   /* align-content: space-between; */
 }
 
-div:nth-child(1) {
+.Box > div:nth-child(1) {
   font-size: 12px;
 }
 
-.Box div:nth-child(2) {
+.Box > div:nth-child(2) {
   font-size: 18px;
 }
 
-.Box div:nth-child(3) {
+.Box > div:nth-child(3) {
   font-size: 15px;
 }
 
@@ -242,7 +243,7 @@ div:nth-child(1) {
   position: relative;
 }
 .week {
-  width: 350px;
+  width: 410px;
 }
 .system {
   width: 200px;
