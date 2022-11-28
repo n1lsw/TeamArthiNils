@@ -19,7 +19,15 @@
   display: flex;
   flex-direction: row;
   height: 150vh;
-  background-color: #ffcc99;
+  width: 100vw;
+  background-color: beige;
+  font-family: "Fira Mono", monospace;
+  font-family: "Inter", sans-serif;
+}
+
+#color_second {
+  background-color: white;
+  margin: 20px;
 }
 
 .date1 {
@@ -46,8 +54,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
-  width: 20vw;
+  height: 90%;
+  width: 25vw;
   /* border: 1px black solid; */
   font-size: 30px;
   padding-top: 20px;
@@ -82,13 +90,11 @@
   gap: 10px;
 }
 
-.div1,
-.div2,
-.div3 {
+/* #inlet {
   height: 10px;
   width: 10px;
   background-color: green;
-}
+} */
 
 #LogoutDiv {
   display: flex;
@@ -98,7 +104,7 @@
 #Logout {
   display: flex;
   align-items: center;
-  background-color: #ffcc99;
+  background-color: beige;
   border: 0px;
   font-size: 20px;
 }
@@ -114,6 +120,7 @@
 .middle_boxes {
   display: flex;
   flex-direction: column;
+  margin-left: 30px;
   /* justify-content: center; */
   /* align-items: center; */
 }
@@ -231,6 +238,12 @@
   font-size: 20px;
 }
 
+.images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .track {
   font-size: 18px;
 }
@@ -241,9 +254,11 @@
 }
 .box1 {
   position: relative;
+  margin-left: 20px;
 }
 .week {
   width: 410px;
+  /* margin-left: ; */
 }
 .system {
   width: 200px;
@@ -253,6 +268,7 @@
   flex-direction: row;
   gap: 10px;
   padding-top: 10px;
+  margin-left: 20px;
 }
 .textimg {
   position: absolute;
@@ -265,6 +281,7 @@
 }
 .systemimg {
   position: relative;
+  /* margin-left: 50px; */
 }
 .textimg2 {
   position: absolute;
@@ -280,16 +297,32 @@
   padding-top: 20px;
 }
 
+.small_images {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.vertLine {
+  border-left: 1px solid grey;
+  height: 150vh;
+  margin-left: 15px;
+  margin-block: 20px;
+  /* padding-bottom: 20px; */
+}
+
 .card {
   display: flex;
   flex-direction: column;
   width: 20vw;
-  gap: 90vh;
-  padding: 30px;
+  height: 90%;
+  gap: 100vh;
+  /* padding: 30px; */
   align-items: center;
+  margin-top: 20px;
 }
 .changetext {
-  color: lightgray;
+  color: black;
   font-size: 16px;
   padding-top: 5px;
 }
