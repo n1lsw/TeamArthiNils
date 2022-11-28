@@ -20,7 +20,7 @@
   flex-direction: row;
   height: 150vh;
   width: 100vw;
-  background-color: beige;
+  background-color: rgba(251, 247, 244, 255);
   font-family: "Fira Mono", monospace;
   font-family: "Inter", sans-serif;
 }
