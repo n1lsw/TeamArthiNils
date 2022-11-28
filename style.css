@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .nav {
@@ -219,4 +220,61 @@ div:nth-child(1) {
 
 #bottom4 {
   grid-area: d;
+}
+.textitems {
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  color: #ffff;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.track {
+  font-size: 18px;
+}
+.button1 {
+  height: 30px;
+  text-align: center;
+  padding: 5px;
+}
+.box1 {
+  position: relative;
+}
+.week {
+  width: 350px;
+}
+.system {
+  width: 200px;
+}
+.image1 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-top: 10px;
+}
+.textimg {
+  position: absolute;
+  z-index: 3;
+  top: 30px;
+  padding: 10px;
+}
+.imagereport {
+  position: relative;
+}
+.systemimg {
+  position: relative;
+}
+.textimg2 {
+  position: absolute;
+  z-index: 3;
+  top: 30px;
+  padding: 10px;
+}
+.incomplete {
+  width: 40%;
+  padding-top: 20px;
+}
+.complete {
+  padding-top: 20px;
 }
