@@ -28,6 +28,10 @@
 #color_second {
   background-color: white;
   margin: 20px;
+  grid-area: b;
+  width: 35vw;
+  height: autov;
+  justify-self: center;
 }
 
 .date1 {
@@ -84,6 +88,7 @@
   /* border: 1px black solid; */
   font-size: 30px;
   padding-top: 20px;
+  grid-area: a;
 }
 
 #Solarius {
@@ -92,19 +97,25 @@
 
 .Sidebar img {
   height: 40px;
-  aspect-ratio: 1;
+  width: 40px;
+  z-index: 1;
+  display: absolute;
+  /* aspect-ratio: 1/1; */
 }
 
+/* #Company, */
 #DashBoard,
 #Education,
 #Resources,
 #Settings {
   display: flex;
   align-items: center;
+  flex-direction: row;
   gap: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
   /* font-size: 200px; */
+  margin-left: 20px;
 }
 
 #inlet {
@@ -129,7 +140,7 @@
 #Logout {
   display: flex;
   align-items: center;
-  background-color: beige;
+  background-color: rgba(251, 247, 244, 255);
   border: 0px;
   font-size: 20px;
 }
@@ -146,6 +157,10 @@
   display: flex;
   flex-direction: column;
   margin-left: 30px;
+  grid-area: c;
+  width: 35vw;
+  justify-self: center;
+
   /* justify-content: center; */
   /* align-items: center; */
 }
@@ -270,7 +285,6 @@
   padding: 5px;
 }
 .box1 {
-
   height: 200px;
   background: url(./Assets/weeklyreport.png) no-repeat;
   padding: 20px;
@@ -284,7 +298,6 @@
 }
 .system {
   width: 200px;
-
 }
 
 .image1 {
@@ -296,7 +309,6 @@
   height: 100vh;
 
   margin-left: 20px;
-
 }
 .report,
 .track,
@@ -308,6 +320,7 @@
 }
 .imagereport {
   position: relative;
+  /* height: 100px; */
   /* margin-left: 50px; */
 }
 .textitems {
@@ -318,6 +331,7 @@
 }
 .systemimg {
   position: relative;
+  /* height: 100px; */
 }
 .complete {
   padding-top: 20px;
@@ -341,8 +355,9 @@
   display: flex;
   flex-direction: column;
   width: 20vw;
-  height: 90%;
+  /* height: 50vh; */
   gap: 100vh;
+  grid-area: d;
   /* padding: 30px; */
   align-items: center;
   margin-top: 20px;
@@ -368,4 +383,84 @@
   object-fit: cover;
   border-radius: 9999px;
   border: 5px solid #fff;
+}
+
+@media (max-width: 1200px) {
+  .Sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 90%; */
+    width: 10vw;
+    /* border: 1px black solid; */
+    font-size: 30px;
+    /* padding-top: 20px; */
+    justify-content: start;
+    position: fixed;
+  }
+
+  #DashBoard div,
+  #Education div,
+  #Resources div,
+  #Settings div {
+    display: flex;
+    align-items: center;
+    /* gap: 20px; */
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
+    display: none;
+  }
+  #inlet div {
+    display: none;
+  }
+  #Solarius {
+    display: flex;
+    display: none;
+    align-items: center;
+  }
+  .Sidebar img {
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  #aux {
+    /* height: 100%; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: start;
+    align-items: center;
+  }
+
+  #Logout {
+    display: none;
+    align-items: center;
+    background-color: beige;
+    border: 0px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "a b d"
+      "a c d";
+    background-color: rgba(251, 247, 244, 250);
+  }
+  .card {
+    width: auto;
+    gap: 50vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+  }
+  .Sidebar {
+    width: auto;
+  }
 }
