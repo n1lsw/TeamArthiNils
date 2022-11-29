@@ -48,23 +48,30 @@
             </div>
             <div id="Resources">
               <img src="Assets/icons8-paste-50.png" alt="" />
-              <div>Resources</div>
+
+              <!-- button -->
+
+              <script>
+                function myFunction() {
+                  var x = document.getElementById("inlet");
+                    if (x.style.display === "none") {
+                      x.style.display = "block";
+                    } else {
+                      x.style.display = "none";
+                    }
+                  }
+              </script>
+
+              <div><button onclick="myFunction()">Resources</div>
             </div>
 
             <div id="inlet">
-              <div>
-                <div1></div1>
-                Genetics 101
-              </div>
-              <div>
-                <div2></div2>
-                DNA Synthesis
-              </div>
-              <div>
-                <div3></div3>
-                Events
-              </div>
+              <div>Genetics 101</div>
+              <div>DNA Synthesis</div>
+              <div>Events</div>
             </div>
+
+            <!-- button -->
 
             <div id="Settings">
               <img src="Assets/icons8-cog-96.png" alt="" />
@@ -191,7 +198,9 @@
       <div class="middle_boxes">
         <div id="header_third">
           <div>Monthly pinned</div>
-          <div>View all</div>
+          <div>
+            <a href="">View all</a>
+          </div>
         </div>
         <div class="Box">
           <div class="aux_spacing">
